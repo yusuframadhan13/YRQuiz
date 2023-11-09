@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content_love {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+#content_love svg {
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(221, 0, 0);
+    margin-left: 4px;
+    /* color: silver; */
+}
+
+#container {
+    margin-top: 20px;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+}
+
+#modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.726);
+    display: none;
+}
+
+#modal span {
+    width: 50%;
+    height: 50%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5%;
+    padding: 2%;
+}
+
+#modal button {
+    background-color: rgb(179, 0, 0);
+    border: none;
+    padding: 2%;
+    color: white;
+    display: none;
+}
+
+#svg_success {
+    color: rgb(0, 170, 0);
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    display: none;
+}
+
+#svg_gagal {
+    color: rgb(184, 0, 0);
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    display: none;
+}
+
+#svg_emot {
+    color: rgb(236, 181, 0);
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    display: none;
+}
+
+#modal_hasil {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.493);
+    background-color: white;
+    display: none;
+}
+
+#modal_hasil ul {
+    width: 100%;
+    float: left;
+}
+
+#modal_hasil ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+#modal_hasil svg {
+    width: 30px;
+    margin: 1%;
+}
+
+#quiz-container {
+    padding: 2%;
+}
+
+#question {
+    text-align: center;
+}
+
+#image_question {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+#choices {
+    list-style: none;
+}
+
+#choices li {
+    background-color: rgb(255, 255, 255);
+    margin: 1%;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px silver;
+    display: flex;
+    align-items: center;
+}
+
+#choices li p {
+    margin-left: 15px;
+}
+
+#choices input {
+    font-size: 80px;
+}
+
+#submit {
+    width: 100%;
+    font-size: 18px;
+    padding: 5px;
+    background-color: rgb(0, 137, 190);
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 2%;
+    border-radius: 20px;
+}
+
+footer {
+    float: left;
+    padding: 1%;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+footer button {
+    width: 180px;
+    padding: 2px;
+    margin-top: 5px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+footer button a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 1200px){
+
+    #container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 850px){
+    
+    #container {
+        width: 70%;
+    }
+
+    #question {
+        font-size: 16px;
+    }
+
+    #choices li {
+        margin-top: 5px;
+    }
+
+    #quiz-container {
+        border-radius: 2%;
+    }
+
+    #submit {
+        font-size: 16px;
+    }
+
+    #modal span {
+        width: 90%;
+    }
+
+    #modal_hasil h3 {
+        margin-left: 10px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 720px){
+
+    main {
+        width: 100%;
+    }
+
+    #container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px){
+    
+    #container {
+        width: 100%;
+    }
+}
